@@ -1,0 +1,60 @@
+{
+    "gnomesCollectedInCurrentRun": 29,
+    "coinsInCurrentRun": 0,
+    "highestGnomeDiscovered": 5,
+    "logoffTime": 1673908787000,
+    "gnomes": [
+        {
+            "num": 15,
+            "x": 45,
+            "y": 291,
+            "heading": 4.03171057211,
+            "waddleOffset": 0.36651914291,
+            "customData": {}
+        },
+        {
+            "num": 16,
+            "x": 391,
+            "y": 81,
+            "heading": 1.0471975512,
+            "waddleOffset": 1.76278254451,
+            "customData": {}
+        }
+    ],
+    "holes": [
+        {
+            "x": 0,
+            "y": 0,
+            "contents": null
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "contents": {
+                "num": 8,
+                "customData": {}
+            }
+        }
+    ],
+    "inventory": [
+        {
+            "name": "Seed 1",
+            "amount": 1,
+            "discovered": true
+        },
+        {
+            "name": "Seed 2",
+            "amount": 148,
+            "discovered": true
+        },
+        {
+            "name": "Seed 3",
+            "amount": 0,
+            "discovered": false
+        }
+    ],
+
+    "totalGnomesCollected": 128,
+    "totalCoins": 10000,
+    "totalResets": 1
+}

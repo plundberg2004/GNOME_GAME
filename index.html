@@ -1,0 +1,115 @@
+<html style="width: 750px; height: 550px; margin: 0; padding: 0; border: 0">
+    <head>
+        <script src="perlin.js"></script>
+        <script src="gameScript.js"></script>
+        <!-- <script src="gnome.js"></script> -->
+        <link rel="stylesheet" href="gnome.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body style="width: 750px; height: 550px; margin: 0; padding: 0; border: 0">
+        <progress class="hidden" id="catchup-bar" value="0" max="1"></progress>
+
+        <div id="coin-counter" class="border">
+            <img id="coin-image" class="coin-image" src="./gnomes/Coin.png" />
+            <h1 id="coin-count">123981238918312890</h1>
+        </div>
+
+        <section id="toolbar">
+            <button
+                id="toolbar-button-1"
+                class="button button1 toolbar_button toolbar_button_0"
+            >
+                <div
+                    class="button-icon"
+                    style="background-image: url('./gnomes/Shovel.png')"
+                ></div>
+                <div class="keybind">1</div>
+            </button>
+            <!-- <button
+                id="toolbar-button-2"
+                class="button button2 toolbar_button toolbar_button_1"
+            >
+                <div
+                    class="button-icon"
+                    style="background-image: url('./gnomes/')"
+                ></div>
+                <div class="keybind">2</div>
+            </button>
+            <button
+                id="toolbar-button-3"
+                class="button button2 toolbar_button toolbar_button_2"
+            >
+                <div
+                    class="button-icon"
+                    style="background-image: url('./gnomes/')"
+                ></div>
+                <div class="keybind">3</div>
+            </button>
+            <button
+                id="toolbar-button-3"
+                class="button button1 toolbar_button toolbar_button_3"
+            >
+                <div
+                    class="button-icon"
+                    style="background-image: url('./gnomes/')"
+                ></div>
+                <div class="keybind">4</div>
+            </button> -->
+            <button
+                id="toolbar-button-5"
+                class="button button1 toolbar_button toolbar_button_4"
+            >
+                <div
+                    class="button-icon"
+                    style="background-image: url('./gnomes/Inventory.png')"
+                ></div>
+                <div class="keybind">2</div>
+            </button>
+        </section>
+
+        <div id = 'debug'></div>
+
+        <section id="inventory" class="inventory-hidden border">
+        </section>
+
+        <button id="gnome-dex-button" class="button border"></button>
+
+        <section id="gnome-dex" class="gnome-dex-hidden border">
+            <h1 id="gd-title">GNOME-DEX</h1>
+        </section>
+
+        <div id="traderSign" class = 'sign sign-left'>
+            <img src="gnomes/Market Sign.png" />
+        </div>
+        <div id="mainAreaSign" class = 'sign sign-right'>
+            <img src="gnomes/Gnome Sign.png" />
+        </div>
+        
+        <div id="price-tag" class="border" style="display:none;">
+            <img id="coin-image" class="coin-image" src="./gnomes/Coin.png" />
+            <h1 id="price-tag-value">01234</h1>
+        </div>
+        
+        <div id = 'trader' class="trader-hidden">
+            <img src = 'gnomes/shop.png' draggable="false" style="position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: -1;">
+            <section id = 'trader-row-1' class="trader-row"></section>
+            <section id = 'trader-row-2' class="trader-row"></section>
+            <section id = 'trader-row-3' class="trader-row"></section>
+            <div id = 'trader-timer'>2i31i31i319</div>
+        </div>
+
+        <canvas
+            id="mainCanvas"
+            style="margin: 0; padding: 0; border: 0; width: 750px; height: 550px"
+            width=750px
+            height=550px
+        >
+        </canvas>
+    </body>
+</html>
